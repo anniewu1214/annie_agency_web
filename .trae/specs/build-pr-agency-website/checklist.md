@@ -1,0 +1,21 @@
+# Checklist
+
+- [x] Project scaffolds successfully with `npm install && npm run dev`
+- [x] Navigator displays "PlayAnnieTime" and "Branding and Consultant" on the left, with Work/Service/About/Contact links on the right
+- [x] Active tab is visually highlighted based on current route
+- [x] Footer appears on every page with email "info@playannietime.cn" and company description
+- [x] Home page hero section displays three core services (BRAND STRATEGY, PRECISION GROWTH, MARKET INSIGHT) over a background image
+- [x] Work page displays four project items with titles, descriptions, and placeholder images
+- [x] Services page displays "Crafting Presence in the Chinese Market" heading with intro paragraph
+- [x] Each service item on Services page expands/collapses on button click showing full content
+- [x] About page shows two-column layout: portrait image left, biography text right
+- [x] About page biography includes the completed "With an academic..." sentence
+- [x] Contact page displays introductory text and a form with all specified fields
+- [x] Contact form validates required fields (Name, Email) and shows errors when empty
+- [x] Contact form shows success message "Thank you for reaching out..." after submission
+- [x] Inquiry Type supports multi-select with 4 options
+- [x] Message textarea shows placeholder "Briefly describe your project goals and requirements."
+- [x] All images are placeholder/dummy images
+- [x] All copy text is complete and free of typos (no "Consutant", no full-width characters, no incomplete sentences)
+- [x] Responsive design: hamburger menu appears on mobile (<768px)
+- [x] Responsive design: all pages render correctly on mobile viewports

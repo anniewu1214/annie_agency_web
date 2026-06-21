@@ -1,0 +1,88 @@
+.footer {
+  background: #3f1f11;
+  color: var(--color-silver-white);
+  padding: 5rem 3rem;
+}
+
+.inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  gap: 4rem;
+  align-items: flex-start;
+}
+
+.left {
+  flex: 0 0 280px;
+}
+
+.brand {
+  font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.03em;
+}
+
+.tagline {
+  font-family: 'Hanken Grotesk', system-ui, sans-serif;
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: rgba(245, 240, 234, 0.6);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin-bottom: 2rem;
+}
+
+.email a {
+  font-family: 'Hanken Grotesk', system-ui, sans-serif;
+  font-size: 0.85rem;
+  color: rgba(245, 240, 234, 0.85);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(245, 240, 234, 0.3);
+  padding-bottom: 0.15rem;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.email a:hover {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+.right {
+  flex: 1;
+  padding-top: 0.1rem;
+}
+
+.description {
+  font-family: 'Hanken Grotesk', system-ui, sans-serif;
+  font-size: 0.85rem;
+  line-height: 1.8;
+  color: rgba(245, 240, 234, 0.65);
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 3.5rem 1.5rem;
+  }
+
+  .inner {
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  .left {
+    flex: none;
+    width: 100%;
+  }
+
+  .tagline {
+    margin-bottom: 1.5rem;
+  }
+
+  .description {
+    font-size: 0.8rem;
+    line-height: 1.7;
+  }
+}

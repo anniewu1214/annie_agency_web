@@ -1,0 +1,99 @@
+.page {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 8rem 3rem 6rem;
+  min-height: 60vh;
+  background: var(--color-silver-white);
+}
+
+.pillars {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+.pillarWrap {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.pillar {
+  font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--color-text);
+  letter-spacing: 0.18em;
+  text-align: center;
+  line-height: 1.3;
+  white-space: nowrap;
+  text-wrap: balance;
+}
+
+.divider {
+  width: 1px;
+  height: 48px;
+  background: var(--color-border);
+}
+
+.subtitle {
+  font-family: 'Hanken Grotesk', system-ui, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--color-text-secondary);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.carouselSection {
+  width: 100%;
+  padding: 5rem 3rem 5rem 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 5rem 1.5rem 4rem;
+    min-height: 50vh;
+  }
+
+  .pillars {
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .pillarWrap {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .divider {
+    width: 60px;
+    height: 1px;
+  }
+
+  .pillar {
+    font-size: 1.5rem;
+    white-space: normal;
+  }
+
+  .subtitle {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+
+  .carouselSection {
+    padding: 3rem 0 0;
+  }
+}

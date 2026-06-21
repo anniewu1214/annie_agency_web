@@ -1,0 +1,84 @@
+.page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 6rem 3rem;
+}
+
+.title {
+  font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  font-size: 3rem;
+  font-weight: 400;
+  color: var(--color-text);
+  margin-bottom: 4rem;
+  letter-spacing: 0.02em;
+  text-wrap: balance;
+}
+
+.rows {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.row {
+  display: flex;
+  gap: 3rem;
+  align-items: flex-start;
+}
+
+.carouselCol {
+  flex: 0 0 55%;
+  min-width: 0;
+}
+
+.textCol {
+  flex: 1;
+  padding-top: 0.5rem;
+}
+
+.cardTitle {
+  font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--color-text);
+  margin-bottom: 1rem;
+  letter-spacing: 0.02em;
+  text-wrap: balance;
+}
+
+.cardDescription {
+  font-family: 'Hanken Grotesk', system-ui, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--color-text-secondary);
+  line-height: 1.75;
+}
+
+@media (max-width: 768px) {
+  .page {
+    padding: 4rem 1.5rem;
+  }
+
+  .title {
+    font-size: 2.25rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .rows {
+    gap: 3.5rem;
+  }
+
+  .row {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .carouselCol {
+    flex: none;
+    width: 100%;
+  }
+
+  .textCol {
+    padding-top: 0;
+  }
+}

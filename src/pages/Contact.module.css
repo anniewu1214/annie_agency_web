@@ -1,0 +1,230 @@
+.page {
+  padding: 5rem 1.5rem 6rem;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.intro {
+  font-family: 'Hanken Grotesk', system-ui, sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--color-text-secondary);
+  margin-bottom: 3rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.label {
+  font-family: 'Hanken Grotesk', system-ui, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--color-text);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.required {
+  color: var(--color-warm-orange);
+  margin-left: 0.15rem;
+}
+
+.input {
+  width: 100%;
+  padding: 0.85rem 0;
+  font-family: 'Hanken Grotesk', system-ui, sans-serif;
+  font-size: 0.95rem;
+  color: var(--color-text);
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--color-border);
+  outline: none;
+  transition: border-color 0.25s ease;
+}
+
+.input:focus {
+  border-bottom-color: var(--color-warm-orange);
+}
+
+.input::placeholder {
+  color: #A89B8A;
+}
+
+.textarea {
+  width: 100%;
+  min-height: 120px;
+  padding: 0.85rem 0;
+  font-family: 'Hanken Grotesk', system-ui, sans-serif;
+  font-size: 0.95rem;
+  color: var(--color-text);
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--color-border);
+  outline: none;
+  resize: vertical;
+  transition: border-color 0.25s ease;
+}
+
+.textarea:focus {
+  border-bottom-color: var(--color-warm-orange);
+}
+
+.textarea::placeholder {
+  color: #A89B8A;
+}
+
+.checkboxGroup {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem 1.5rem;
+}
+
+.checkboxLabel {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: 'Hanken Grotesk', system-ui, sans-serif;
+  font-size: 0.85rem;
+  color: var(--color-text);
+  cursor: pointer;
+  user-select: none;
+  min-height: 44px;
+}
+
+.checkbox {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--color-warm-orange);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.submit {
+  width: 40%;
+  padding: 1rem 2rem;
+  margin: 0.75rem auto 0;
+  font-family: 'Hanken Grotesk', system-ui, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #fff;
+  background: var(--color-warm-orange);
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  cursor: pointer;
+  touch-action: manipulation;
+  transition: background 0.2s ease, opacity 0.2s ease;
+}
+
+.submit:hover {
+  background: #C0683A;
+}
+
+.submit:active {
+  background: var(--color-warm-orange);
+}
+
+.submit:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.error {
+  font-family: 'Hanken Grotesk', system-ui, sans-serif;
+  font-size: 0.75rem;
+  color: var(--color-warm-orange);
+  margin-top: 0.2rem;
+}
+
+.success {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.successTitle {
+  font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: var(--color-text);
+  margin-bottom: 1rem;
+}
+
+.successText {
+  font-family: 'Hanken Grotesk', system-ui, sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: var(--color-text-secondary);
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .page {
+    padding: 3rem 1.5rem 4rem;
+  }
+
+  .intro {
+    font-size: 0.85rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+  }
+
+  .form {
+    gap: 1.5rem;
+  }
+
+  .checkboxGroup {
+    grid-template-columns: 1fr;
+    gap: 0.6rem 0;
+  }
+
+  .checkboxLabel {
+    font-size: 0.8rem;
+    min-height: 44px;
+  }
+
+  .checkbox {
+    width: 20px;
+    height: 20px;
+  }
+
+  .input {
+    padding: 0.75rem 0;
+    font-size: 0.9rem;
+  }
+
+  .textarea {
+    padding: 0.75rem 0;
+    font-size: 0.9rem;
+    min-height: 100px;
+  }
+
+  .submit {
+    padding: 1rem 2rem;
+    font-size: 0.75rem;
+  }
+
+  .success {
+    padding: 2rem 0.5rem;
+  }
+
+  .successTitle {
+    font-size: 1.1rem;
+  }
+
+  .successText {
+    font-size: 0.85rem;
+  }
+}
