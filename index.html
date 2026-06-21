@@ -15,6 +15,17 @@
   </head>
   <body>
     <div id="root"></div>
+    <script>
+      (function () {
+        var redirect = sessionStorage.getItem('redirect');
+        if (redirect) {
+          sessionStorage.removeItem('redirect');
+          var base = location.pathname.replace(/\/$/, '');
+          var sub = redirect.replace(/^\/|\/$/g, '');
+          window.history.replaceState(null, '', base + '/' + sub);
+        }
+      })();
+    </script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
