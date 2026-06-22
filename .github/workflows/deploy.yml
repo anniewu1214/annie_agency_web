@@ -30,6 +30,8 @@ jobs:
 
       - run: npm ci
       - run: npm run build
+        env:
+          VITE_BASE: /annie_agency_web/
 
       - uses: actions/configure-pages@v4
 
