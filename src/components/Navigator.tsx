@@ -18,7 +18,7 @@ function Navigator() {
     <nav className={`${styles.nav} ${menuOpen ? styles.menuOpen : ''}`}>
       <div className={styles.brand}>
         <NavLink to="/" className={styles.brandMain} onClick={closeMenu}>
-          PlayAnnieTime
+          PRISMERIT
         </NavLink>
         <span className={styles.brandSub}>Branding and Consultant</span>
       </div>
